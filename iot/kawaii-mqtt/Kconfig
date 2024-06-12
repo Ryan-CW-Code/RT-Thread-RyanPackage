@@ -74,7 +74,7 @@ if PKG_USING_KAWAII_MQTT
                     default n
 
             config SALOF_LOG_LEVEL
-                    int "salof output log level "
+                    int "salof output log level"
                     default KAWAII_MQTT_LOG_LEVEL
         endif
     endif
@@ -144,6 +144,36 @@ if PKG_USING_KAWAII_MQTT
     config PKG_USING_KAWAII_MQTT_TEST
         bool "enable kawaii mqtt test"
         default n
+
+        if PKG_USING_KAWAII_MQTT_TEST
+            config KAWAII_MQTT_HOST
+                string "mqtt host"
+                default "jiejie01.top"
+
+            config KAWAII_MQTT_PORT
+                string "mqtt port"
+                default "1883"
+
+            config KAWAII_MQTT_CLIENTID
+                string "mqtt client id"
+                default "rtthread001"
+
+            config KAWAII_MQTT_USERNAME
+                string "mqtt username"
+                default "rt-thread"
+
+            config KAWAII_MQTT_PASSWORD
+                string "mqtt password"
+                default "rt-thread"
+
+            config KAWAII_MQTT_SUBTOPIC
+                string "mqtt subscribe topic"
+                default "rtt-sub"
+
+            config KAWAII_MQTT_PUBTOPIC
+                string "mqtt publish topic"
+                default "rtt-pub"
+        endif
 
     choice
         prompt "Version"
