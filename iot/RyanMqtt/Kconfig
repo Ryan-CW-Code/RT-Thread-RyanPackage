@@ -32,18 +32,6 @@ if PKG_USING_RYANMQTT
         config PKG_USING_RYANMQTT_V110
             bool "v1.1.0"
 
-        config PKG_USING_RYANMQTT_V110
-            bool "v1.1.0"
-
-        config PKG_USING_RYANMQTT_V120
-            bool "v1.2.0"
-
-        config PKG_USING_RYANMQTT_V110
-            bool "v1.1.0"
-
-        config PKG_USING_RYANMQTT_V120
-            bool "v1.2.0"
-
         config PKG_USING_RYANMQTT_LATEST_VERSION
             bool "latest"
     endchoice
